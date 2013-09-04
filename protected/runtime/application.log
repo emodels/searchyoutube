@@ -1,0 +1,374 @@
+2013/09/04 16:59:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/you...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/youtube-logo.jpg
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 17:00:37 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "baseUrl".' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('baseUrl', Array)
+#1 C:\xampplite\htdocs\searchyoutube\protected\views\layouts\main.php(25): CWebApplication->baseUrl()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 C:\xampplite\htdocs\searchyoutube\protected\views\layouts\column1.php(5): CBaseController->endContent()
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(785): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#13 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(32): CController->render('index')
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#19 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#20 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 19:36:36 [error] [php] include(Google_Client.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampplite\htdocs\searchyoutube\protected\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(30): spl_autoload_call()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (30)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 19:37:32 [error] [php] include(Google_Client.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampplite\htdocs\searchyoutube\protected\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(30): spl_autoload_call()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (30)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 19:42:14 [error] [php] require_once(Zend/Search/Lucene.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:31)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (31)
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (31)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 19:43:16 [error] [php] require_once(Zend/Search/Lucene.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:31)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (31)
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (31)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 19:43:29 [error] [exception.Exception] exception 'Exception' with message 'Google CurlIO client requires the CURL PHP extension' in C:\xampplite\htdocs\searchyoutube\protected\components\google-api-php-client\src\io\Google_CurlIO.php:47
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\components\google-api-php-client\src\Google_Client.php(106): Google_CurlIO->__construct()
+#1 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(33): Google_Client->__construct()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 19:45:21 [error] [exception.Exception] exception 'Exception' with message 'Google CurlIO client requires the CURL PHP extension' in C:\xampplite\htdocs\searchyoutube\protected\components\google-api-php-client\src\io\Google_CurlIO.php:47
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\components\google-api-php-client\src\Google_Client.php(106): Google_CurlIO->__construct()
+#1 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(33): Google_Client->__construct()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 19:46:30 [error] [php] include(Google_PlusService.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampplite\htdocs\searchyoutube\protected\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(41): spl_autoload_call()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (41)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 20:32:29 [error] [php] file_get_contents(https://gdata.youtube.com/feeds/api/videos?q=football&amp;orderby=published&amp;start-index=1&amp;max-results=1&amp;v=2&amp;alt=xml) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:30)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (30)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 21:47:45 [error] [php] file_get_contents(https://gdata.youtube.com/feeds/api/videos?q=sri lanka&amp;orderby=published&amp;start-index=1&amp;max-results=3&amp;v=2) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:35)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (35)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:20:21 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (39)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:21:10 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: &lt;br /&gt;
+HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (39)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:22:26 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:41)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (41)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:23:45 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:41)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (41)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:25:54 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:41)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (41)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:29:06 [error] [exception.Exception] exception 'Exception' with message 'String could not be parsed as XML' in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:49
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(49): SimpleXMLElement->__construct('')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 23:29:26 [error] [exception.Exception] exception 'Exception' with message 'String could not be parsed as XML' in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:49
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(49): SimpleXMLElement->__construct('')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 23:30:24 [error] [exception.Exception] exception 'Exception' with message 'String could not be parsed as XML' in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:51
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(51): SimpleXMLElement->__construct('')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 23:32:18 [error] [exception.Exception] exception 'Exception' with message 'String could not be parsed as XML' in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:56
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(56): SimpleXMLElement->__construct('')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/04 23:34:46 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (39)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:35:49 [error] [php] file_get_contents(https://...@viewCount &gt; 10]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (39)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/04 23:40:12 [error] [php] file_get_contents(https://...@viewCount&gt;19999]) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:39)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (39)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 01:05:37 [error] [php] Missing argument 1 for CArrayDataProvider::__construct(), called in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php on line 31 and defined (C:\xampplite\htdocs\searchyoutube\protected\framework\web\CArrayDataProvider.php:67)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/site/index
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (31)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 01:17:47 [error] [exception.CException] exception 'CException' with message 'Property "Entry.viewCount" is not defined.' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php(607) : eval()'d code(1): CComponent->__get('viewCount')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php(607): eval()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CDataColumn.php(139): CComponent->evaluateExpression('$data->viewCoun...', Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent(0, Object(Entry))
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(517): CGridColumn->renderDataCell(0)
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow(0)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#8 [internal function]: CBaseListView->renderSection(Array)
+#9 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php(126): CBaseListView->renderContent()
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(174): CBaseListView->run()
+#12 C:\xampplite\htdocs\searchyoutube\protected\views\site\index.php(48): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#16 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#17 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(68): CController->render('index', Array)
+#18 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#19 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#21 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#23 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#24 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/searchyoutube/site/index
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
