@@ -29,6 +29,7 @@ class SiteController extends Controller
 	{
                 $model = new SearchForm();
                 $entry_collection = array();
+                $advance_search = 'none';
                 
                 if (isset($_POST['SearchForm'])){
                     $model->attributes = $_POST['SearchForm'];
@@ -36,7 +37,16 @@ class SiteController extends Controller
                     $str_subject = $model->subject;
                     $str_subject = str_replace(' ', '%7C', $str_subject);
                     
-                    $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=1&max-results=50&v=2&fields=entry[yt:statistics/@viewCount>' . $model->viewcount . ']';
+                    if ($model->max > 0){
+                        $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=1&max-results=50&hl=' . $model->language . '&lr=' . $model->language . 
+                                   '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->min . '%20and%20yt:statistics/@viewCount<' . $model->max . ']';
+                    
+                        $advance_search = 'block';
+                    }
+                    else{
+                        $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=1&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->viewcount . ']';
+                        $advance_search = 'none';
+                    }
                     
                     $obj_result = file_get_contents($str_URL);
                     file_put_contents("result.xml", $obj_result);
@@ -55,6 +65,7 @@ class SiteController extends Controller
       
                         $entry->viewcount = $viewCount;
                         $entry->link = (string)$value->link['href'];
+                        $entry->embed_url = (string)$value->content['src'];
                         
                         $entry_collection[] = $entry;
                     }
@@ -62,10 +73,13 @@ class SiteController extends Controller
                 
                 $dataProvider = new CArrayDataProvider($entry_collection, array(
                 'keyField'=>false,
-                'pagination'=>false
+                'pagination' => array(
+                   'pageSize' => 10
+                )    
+                //'pagination'=>false
                 ));                
                 
-		$this->render('index', array('model' => $model, 'dataProvider' => $dataProvider));
+		$this->render('index', array('model' => $model, 'dataProvider' => $dataProvider, 'advance_search' => $advance_search));
 	}
 
 	/**

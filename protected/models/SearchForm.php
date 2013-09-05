@@ -9,6 +9,9 @@ class SearchForm extends CFormModel
 {
 	public $subject;
 	public $viewcount;
+	public $language;
+        public $min = 0;
+        public $max = 0;
 
 	/**
 	 * Declares the validation rules.
@@ -16,8 +19,9 @@ class SearchForm extends CFormModel
 	public function rules()
 	{
 		return array(
-			array('subject, viewcount', 'required'),
-                        array('viewcount', 'numerical', 'integerOnly'=>true, 'message'=>'View Count must be a whole number.', 'min'=>0, 'tooSmall'=>'View Count cannot be negative.')
+			array('subject, viewcount, language, min, max', 'required'),
+                        array('viewcount, min, max', 'numerical', 'integerOnly'=>true, 'message'=>'{attribute} must be a whole number.', 'min'=>0, 'tooSmall'=>'{attribute} cannot be negative.'),
+                        array('min','compare','compareAttribute'=>'max','operator'=>'<=', 'allowEmpty'=>false , 'message'=>'{attribute} must be lesser than "{compareValue}".'),
 		);
 	}
 
@@ -30,7 +34,10 @@ class SearchForm extends CFormModel
 	{
 		return array(
 			'subject'=>'Subject',
-			'viewcount'=>'View Count'
+			'viewcount'=>'View Count',
+                        'language' => 'Language', 
+			'min'=>'Minimum Count',
+			'max'=>'Maximum Count',
 		);
 	}
 }
