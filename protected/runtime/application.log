@@ -1381,3 +1381,21 @@ Stack trace:
 REQUEST_URI=/searchyoutube/
 in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (62)
 in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 19:51:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 19:51:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 19:51:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 19:51:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 19:51:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/05 19:51:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
