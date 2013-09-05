@@ -39,8 +39,8 @@ class Entry extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, author, viewcount, link, embed_url', 'required'),
-			array('viewcount', 'numerical', 'integerOnly'=>true),
+			array('id, title, author, viewcount, link, embed_url', 'required'),
+			array('id, viewcount', 'numerical', 'integerOnly'=>true),
 			array('title, link, embed_url', 'length', 'max'=>500),
 			array('author', 'length', 'max'=>100),
 			// The following rule is used by search().

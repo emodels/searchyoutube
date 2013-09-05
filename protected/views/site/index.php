@@ -71,8 +71,9 @@
         <?php
         $this->widget('zii.widgets.grid.CGridView', array(
             'dataProvider' => $dataProvider,
-            'ajaxUpdate' => false,
+            'ajaxUpdate' => true,
             'enablePagination' => true,
+            'template'=>"{summary}{pager}<br>{items}{pager}",
             'columns' => array(
                 array(
                     'name'=>'Title',

@@ -28,58 +28,88 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
                 $model = new SearchForm();
-                $entry_collection = array();
                 $advance_search = 'none';
+                
+                $criteria=new CDbCriteria(array(                    
+                        'order' => 'viewcount DESC'
+                ));
+                $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50)));
                 
                 if (isset($_POST['SearchForm'])){
                     $model->attributes = $_POST['SearchForm'];
                     
                     $str_subject = $model->subject;
-                    $str_subject = str_replace(' ', '%7C', $str_subject);
+                    $str_subject = str_replace(' ', '+', $str_subject);
+                    $str_subject = '%22' . $str_subject . '%22';
                     
-                    if ($model->max > 0){
-                        $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=1&max-results=50&hl=' . $model->language . '&lr=' . $model->language . 
-                                   '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->min . '%20and%20yt:statistics/@viewCount<' . $model->max . ']';
-                    
+                    if ($model->max > 0){ //------------Advanced Search Filter------------------
+                        $criteria=new CDbCriteria(array(                    
+                                'condition' => 'viewcount > ' . $model->min . ' AND viewcount < ' . $model->max,
+                                'order' => 'viewcount DESC'
+                        ));
+                        $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50, 'params' => array('min' => $model->min, 'max' => $model->max))));
                         $advance_search = 'block';
                     }
-                    else{
-                        $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=1&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->viewcount . ']';
+                    else{ //---------------------------Standard Data Capturing Process----------
+                        
+                        Entry::model()->deleteAll();
+                        
+                        $count = 1;
+                        for ($index = 0; $index < 500; $index+=51) {
+                            $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=' . ($index == 0 ? '1' : $index) . '&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->viewcount . ']';
+                            try
+                            {
+                                $obj_result = file_get_contents($str_URL);
+                                
+                                $obj_XML = new SimpleXMLElement($obj_result);
+
+                                foreach ($obj_XML->entry as $value) {
+                                    $entry = new Entry();
+
+                                    $entry->id = $count;
+                                    $entry->title = (string)$value->title;
+                                    $entry->author = (string)$value->author->name;
+
+                                    $yt = $value->children('http://gdata.youtube.com/schemas/2007');
+                                    $attrs = $yt->statistics->attributes();
+                                    $viewCount = (string)$attrs['viewCount']; 
+
+                                    $entry->viewcount = $viewCount;
+                                    $entry->link = (string)$value->link['href'];
+                                    $entry->embed_url = (string)$value->content['src'];
+                                    
+                                    $entry->save();
+                                    $count++;
+                                }
+                            } 
+                            catch(Exception $e)
+                            {
+                                echo $e->getMessage(). '<br/>';
+                            }
+                        }
+                        
                         $advance_search = 'none';
+                        $criteria=new CDbCriteria(array(                    
+                                'order' => 'viewcount DESC'
+                        ));
+                        $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50)));
                     }
-                    
-                    $obj_result = file_get_contents($str_URL);
-                    file_put_contents("result.xml", $obj_result);
-
-                    $obj_XML = new SimpleXMLElement($obj_result);
-
-                    foreach ($obj_XML->entry as $value) {
-                        $entry = new Entry();
-                        
-                        $entry->title = (string)$value->title;
-                        $entry->author = (string)$value->author->name;
-                        
-                        $yt = $value->children('http://gdata.youtube.com/schemas/2007');
-                        $attrs = $yt->statistics->attributes();
-                        $viewCount = (string)$attrs['viewCount']; 
-      
-                        $entry->viewcount = $viewCount;
-                        $entry->link = (string)$value->link['href'];
-                        $entry->embed_url = (string)$value->content['src'];
-                        
-                        $entry_collection[] = $entry;
+                }
+                else{
+                    if (Yii::app()->request->isAjaxRequest){
+                        if (isset($_GET['min']) && isset($_GET['max'])){
+                            $criteria=new CDbCriteria(array(                    
+                                    'condition'=> 'viewcount > ' . $_GET['min'] . ' AND viewcount < ' . $_GET['max'],
+                                    'order' => 'viewcount DESC'
+                            ));
+                            $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50, 'params' => array('min' => $_GET['min'], 'max' => $_GET['max']))));
+                        }
+                    } else {
+                        Entry::model()->deleteAll();
                     }
                 }
                 
-                $dataProvider = new CArrayDataProvider($entry_collection, array(
-                'keyField'=>false,
-                'pagination' => array(
-                   'pageSize' => 10
-                )    
-                //'pagination'=>false
-                ));                
-                
-		$this->render('index', array('model' => $model, 'dataProvider' => $dataProvider, 'advance_search' => $advance_search));
+ 		$this->render('index', array('model' => $model, 'dataProvider' => $dataProvider, 'advance_search' => $advance_search));
 	}
 
 	/**

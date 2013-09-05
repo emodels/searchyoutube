@@ -638,3 +638,746 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/searchyoutube/index?XDEBUG_SESSION_START=netbeans-xdebug&page=2
 ---
+2013/09/05 13:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:20:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=3
+---
+2013/09/05 13:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=3
+---
+2013/09/05 13:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=4
+---
+2013/09/05 13:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=4
+---
+2013/09/05 13:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=5
+---
+2013/09/05 13:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=5
+---
+2013/09/05 13:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=6
+---
+2013/09/05 13:20:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=6
+---
+2013/09/05 13:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=10
+---
+2013/09/05 13:20:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=10
+---
+2013/09/05 13:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=11
+---
+2013/09/05 13:20:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=11
+---
+2013/09/05 13:20:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/up_...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/up_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=11
+---
+2013/09/05 13:20:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=11
+---
+2013/09/05 13:20:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/up_...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/up_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=11
+---
+2013/09/05 13:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:32:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=3
+---
+2013/09/05 13:32:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=3
+---
+2013/09/05 13:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/05 13:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/05 13:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:33:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:33:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('index')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/index?Entry_page=2
+---
+2013/09/05 13:35:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Entry_page/view".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('Entry_page/view')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/Entry_page/2
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 13:36:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:36:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:36:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:36:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/?/Entry_page/2
+---
+2013/09/05 13:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/?/Entry_page/2
+---
+2013/09/05 13:36:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/05 13:36:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/05 13:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index.php/...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/index.php/Entry_page/2
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 13:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Entry_page/view".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('Entry_page/view')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/Entry_page/2
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 13:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('about')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/about
+---
+2013/09/05 13:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "contact".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('contact')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/contact
+---
+2013/09/05 13:44:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/05 13:44:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/05 13:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/05 13:45:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index
+---
+2013/09/05 13:45:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('about')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('about')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/about')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/about
+---
+2013/09/05 13:46:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:46:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/edi...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/edit_find.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:48:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "images".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('images')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('images')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/images/dow...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/images/down_arrow.png
+HTTP_REFERER=http://localhost/searchyoutube/site/index?Entry_page=2
+---
+2013/09/05 13:50:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "go".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('go')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('go')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/go')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/go?Entry_page=2
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 13:50:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "go".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('go')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('go')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/go')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/go?Entry_page=2
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 13:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "go/Entry_page".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('go/Entry_page')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/go/Entry_page/2
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 13:50:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "go/Entry_page".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('go/Entry_page')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/go/Entry_page/2
+HTTP_REFERER=http://localhost/searchyoutube/go
+---
+2013/09/05 14:56:36 [error] [exception.CException] exception 'CException' with message 'Property "CActiveForm.ajaxUpdate" is not defined.' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWidgetFactory.php(162): CComponent->__set('ajaxUpdate', 'true')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'CActiveForm', Array)
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(190): CBaseController->createWidget('CActiveForm', Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\views\site\index.php(49): CBaseController->beginWidget('CActiveForm', Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(94): CController->render('index', Array)
+#9 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/searchyoutube/
+---
+2013/09/05 15:02:34 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "isAjaxRequest".' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('isAjaxRequest', Array)
+#1 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(88): CHttpRequest->isAjaxRequest()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/searchyoutube/
+---
+2013/09/05 15:23:50 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php:103
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(269): CBaseListView->init()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(148): CGridView->init()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\views\site\index.php(100): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(93): CController->render('index', Array)
+#9 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/searchyoutube/
+---
+2013/09/05 15:24:05 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php:103
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(269): CBaseListView->init()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(148): CGridView->init()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\views\site\index.php(100): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(94): CController->render('index', Array)
+#9 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/searchyoutube/
+---
+2013/09/05 15:24:06 [error] [exception.CException] exception 'CException' with message 'The "dataProvider" property cannot be empty.' in C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php:103
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(269): CBaseListView->init()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(148): CGridView->init()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\views\site\index.php(100): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#8 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(94): CController->render('index', Array)
+#9 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/searchyoutube/
+---
+2013/09/05 15:42:38 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "userToProject" is not defined in active record class "Entry".' in C:\xampplite\htdocs\searchyoutube\protected\framework\db\ar\CActiveFinder.php:215
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\db\ar\CActiveFinder.php(312): CActiveFinder->buildJoinTree(Object(CJoinElement), 'userToProject', Array)
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\db\ar\CActiveFinder.php(49): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\db\ar\CActiveRecord.php(1539): CActiveFinder->__construct(Object(Entry), Array)
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\zii\widgets\grid\CGridView.php(269): CBaseListView->init()
+#9 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(148): CGridView->init()
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#11 C:\xampplite\htdocs\searchyoutube\protected\views\site\index.php(100): CBaseController->widget('zii.widgets.gri...', Array)
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#16 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(98): CController->render('index', Array)
+#17 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#18 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#19 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#20 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#22 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#23 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/searchyoutube/
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 15:58:15 [error] [exception.CException] exception 'CException' with message 'Property "CActiveDataProvider.cache_duration" is not defined.' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CActiveDataProvider.php(84): CComponent->__set('cache_duration', 3600)
+#1 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(44): CActiveDataProvider->__construct('Entry', Array)
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/index')
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/searchyoutube/
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 16:31:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "&gp=1".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('&gp=1')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('&gp=1')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/&gp=1/Entr...')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/&gp=1/Entry_page/2?ajax=yw0
+HTTP_REFERER=http://localhost/searchyoutube/
+---
+2013/09/05 17:28:12 [error] [php] file_get_contents(1) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory (C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php:62)
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): SiteController->runAction()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): SiteController->run()
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampplite\htdocs\searchyoutube\index.php(13): CWebApplication->run()
+REQUEST_URI=/searchyoutube/
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (62)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
