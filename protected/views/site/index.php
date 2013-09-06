@@ -64,7 +64,9 @@
             <div class="column"><div style="position: absolute; margin: -6px 0 0 18px"><?php echo CHtml::submitButton(' Search ', array('class' => 'button')); ?></div></div>
             <div class="clearfix"></div>
         </div>
+        <?php if ($dataProvider->getTotalItemCount() > 0){ ?>
         <img id="updown_arrow" src="images/<?php echo $advance_search == 'none' ? 'down_arrow.png' : 'up_arrow.png' ?>" style="float: left; padding: 3px 5px 0 0" /><h4 style="color: gray; font-size: 12px"><a id="lnk_advanced_search" href="javascript:ToggleAdvancedSearch();"><?php echo $advance_search == 'none' ? 'View' : 'Hide'; ?> Advanced Search Options</a><i>&nbsp;&nbsp;( Filter results by range of view counts )</i></h4>
+        <?php } ?>
         <div id="advanced-search" class="row box" style="display: <?php echo $advance_search; ?>">
             <div class="column" style="width: 180px; padding-top: 6px; padding-left: 10px; font-size: 18px">Minimum View Count</div>
             <div class="column"><?php echo $form->textField($model, 'min', array('class' => 'text_box')); ?><?php echo $form->error($model, 'min'); ?></div>
