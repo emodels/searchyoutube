@@ -19,37 +19,37 @@ $this->pageTitle = Yii::app()->name . ' - Edit Profile';
                 ));
         ?>
         <div class="row">
-            <div class="column" style="padding-top: 5px; width: 100px"><b>First Name</b></div>
+            <div class="column" style="padding-top: 5px; width: 150px"><b>First Name</b></div>
             <div class="column"><?php echo $form->textField($model, 'first_name'); ?><?php echo $form->error($model, 'first_name'); ?></div>
             <div class="clearfix"></div>
         </div>
         <div class="row">
-            <div class="column" style="padding-top: 5px; width: 100px"><b>Last Name</b></div>
+            <div class="column" style="padding-top: 5px; width: 150px"><b>Last Name</b></div>
             <div class="column"><?php echo $form->textField($model, 'last_name'); ?><?php echo $form->error($model, 'last_name'); ?></div>
             <div class="clearfix"></div>
         </div>
         <div class="row">
-            <div class="column" style="padding-top: 5px; width: 100px"><b>Email</b></div>
+            <div class="column" style="padding-top: 5px; width: 150px"><b>Email</b></div>
             <div class="column"><?php echo $form->textField($model, 'email'); ?><?php echo $form->error($model, 'email'); ?></div>
             <div class="clearfix"></div>
         </div>
         <div class="row">
-            <div class="column" style="padding-top: 5px; width: 100px"><b>User Name</b></div>
+            <div class="column" style="padding-top: 5px; width: 150px"><b>User Name</b></div>
             <div class="column"><?php echo $form->textField($model, 'username'); ?><?php echo $form->error($model, 'username'); ?></div>
             <div class="clearfix"></div>
         </div>
         <div class="row">
-            <div class="column" style="padding-top: 5px; width: 100px"><b>Password</b></div>
+            <div class="column" style="padding-top: 5px; width: 150px"><b>Password</b></div>
             <div class="column"><?php echo $form->passwordField($model, 'password'); ?><?php echo $form->error($model, 'password'); ?></div>
             <div class="clearfix"></div>
         </div>
         <div class="row">
-            <div class="column" style="padding-top: 5px; width: 100px"><b>Confirm Password</b></div>
+            <div class="column" style="padding-top: 5px; width: 150px"><b>Confirm Password</b></div>
             <div class="column"><?php echo $form->passwordField($model, 'conf_password'); ?><?php echo $form->error($model, 'conf_password'); ?></div>
             <div class="clearfix"></div>
         </div>
         <div class="row buttons">
-            <div class="column" style="padding-left: 108px"><?php echo CHtml::submitButton('Login', array('class' => 'button')); ?></div>
+            <div class="column" style="padding-left: 158px"><?php echo CHtml::submitButton('Update Profile', array('class' => 'button', 'style' => 'width:155px')); ?></div>
             <div class="clearfix"></div>
         </div>
 
