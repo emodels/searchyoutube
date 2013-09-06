@@ -84,7 +84,7 @@ class SiteController extends Controller
 
                                     $entry->viewcount = $viewCount;
                                     $entry->link = (string)$value->link['href'];
-                                    $entry->embed_url = (string)$value->content['src'];
+                                    $entry->embed_url = (string)$value->content['src'] == '' ? 'n/a' : $value->content['src'];
                                     $entry->user = Yii::app()->user->id;
                                     
                                     if ($entry->save()){
