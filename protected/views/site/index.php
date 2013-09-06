@@ -43,7 +43,14 @@
             'enableClientValidation' => true,
             'clientOptions' => array(
                 'validateOnSubmit' => true,
-                'validateOnChange' => true
+                'validateOnChange' => true,
+                'afterValidate'=>'js:function(form, data, hasError) 
+                                 {   
+                                    if(!hasError){
+                                       $("#dialogProgress").dialog("open").siblings(".ui-dialog-titlebar").remove();
+                                    }
+                                    return true;
+                                 }'           
             ),
         ));
         ?>  
@@ -115,4 +122,24 @@
     ));?>
     <div id="media-active"></div>    
     <?php $this->endWidget();?>    
+    <?php
+    $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
+        'id'=>'dialogProgress',
+        'options'=>array(
+            'title'=>'Search in Progress',
+            'autoOpen'=>false,
+            'modal'=>true,
+            'resizable'=>false,
+            'width'=>370,
+            'height'=>100,
+            'show'=>'puff',
+            'hide'=>'puff'
+        ),
+    ));?>
+    <div class="row" style="padding-top: 5px">
+        <div class="column"><img src="images/ajax-loader.gif" /></div>
+        <div class="column" style="font-size: 18px; padding-top: 14px">Search in progress, please wait....</div>
+        <div class="clearfix"></div>
+    </div>    
+    <?php $this->endWidget();?>
 </div>

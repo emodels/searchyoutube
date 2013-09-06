@@ -2,7 +2,7 @@
 
 class SiteController extends Controller
 {
-	/**
+        /**
 	 * Declares class-based actions.
 	 */
 	public function actions()
@@ -27,10 +27,19 @@ class SiteController extends Controller
 	 */
 	public function actionIndex()
 	{
+                /*
+                 * Validate User Authantication
+                 */      
+                if(Yii::app()->user->isGuest)
+                {
+                    $this->redirect(array('site/login'));
+                }
+            
                 $model = new SearchForm();
                 $advance_search = 'none';
                 
-                $criteria=new CDbCriteria(array(                    
+                $criteria=new CDbCriteria(array(
+                        'condition' => 'user = ' . Yii::app()->user->id,
                         'order' => 'viewcount DESC'
                 ));
                 $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50)));
@@ -44,7 +53,7 @@ class SiteController extends Controller
                     
                     if ($model->max > 0){ //------------Advanced Search Filter------------------
                         $criteria=new CDbCriteria(array(                    
-                                'condition' => 'viewcount > ' . $model->min . ' AND viewcount < ' . $model->max,
+                                'condition' => 'user = ' . Yii::app()->user->id . ' AND viewcount > ' . $model->min . ' AND viewcount < ' . $model->max,
                                 'order' => 'viewcount DESC'
                         ));
                         $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50, 'params' => array('min' => $model->min, 'max' => $model->max))));
@@ -52,7 +61,7 @@ class SiteController extends Controller
                     }
                     else{ //---------------------------Standard Data Capturing Process----------
                         
-                        Entry::model()->deleteAll();
+                        Entry::model()->deleteAll('user = :user', array(':user' => Yii::app()->user->id));
                         
                         $count = 1;
                         for ($index = 0; $index < 500; $index+=51) {
@@ -66,7 +75,6 @@ class SiteController extends Controller
                                 foreach ($obj_XML->entry as $value) {
                                     $entry = new Entry();
 
-                                    $entry->id = $count;
                                     $entry->title = (string)$value->title;
                                     $entry->author = (string)$value->author->name;
 
@@ -77,8 +85,15 @@ class SiteController extends Controller
                                     $entry->viewcount = $viewCount;
                                     $entry->link = (string)$value->link['href'];
                                     $entry->embed_url = (string)$value->content['src'];
+                                    $entry->user = Yii::app()->user->id;
                                     
-                                    $entry->save();
+                                    if ($entry->save()){
+                                        
+                                    }
+                                    else{
+                                        print_r($entry->getErrors()); 
+                                    }
+                                    
                                     $count++;
                                 }
                             } 
@@ -90,6 +105,7 @@ class SiteController extends Controller
                         
                         $advance_search = 'none';
                         $criteria=new CDbCriteria(array(                    
+                                'condition' => 'user = ' . Yii::app()->user->id,
                                 'order' => 'viewcount DESC'
                         ));
                         $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50)));
@@ -99,13 +115,13 @@ class SiteController extends Controller
                     if (Yii::app()->request->isAjaxRequest){
                         if (isset($_GET['min']) && isset($_GET['max'])){
                             $criteria=new CDbCriteria(array(                    
-                                    'condition'=> 'viewcount > ' . $_GET['min'] . ' AND viewcount < ' . $_GET['max'],
+                                    'condition'=> 'user = ' . Yii::app()->user->id . ' AND viewcount > ' . $_GET['min'] . ' AND viewcount < ' . $_GET['max'],
                                     'order' => 'viewcount DESC'
                             ));
                             $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50, 'params' => array('min' => $_GET['min'], 'max' => $_GET['max']))));
                         }
                     } else {
-                        Entry::model()->deleteAll();
+                        Entry::model()->deleteAll('user = :user', array(':user' => Yii::app()->user->id));
                     }
                 }
                 
@@ -146,30 +162,73 @@ class SiteController extends Controller
 		$this->render('contact',array('model'=>$model));
 	}
 
+        public function actionProfile(){
+                $model = User::model()->findByPk(Yii::app()->user->id);
+                
+                if (isset($_POST['User'])) {
+                    $model->attributes = $_POST['User'];
+                    
+                    if ($model->save()){
+                        Yii::app()->user->setFlash('success', "User Profile Updated");
+                        $this->redirect(Yii::app()->homeUrl);
+                    }
+                    else{
+                        Yii::app()->user->setFlash('notice', $model->getErrors());
+                    }
+                }
+                
+		$this->render('profile',array('model'=>$model));
+        }
+        
 	/**
 	 * Displays the login page
 	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
+            $model=new LoginForm;
 
-		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
+            /**
+             * Check for Remember me cookie and show user name
+             */
+            if (isset(Yii::app()->request->cookies['remember_me'])) {
+               $model->username = Yii::app()->request->cookies['remember_me']->value;
+               $model->rememberMe = 1;
+            }
+            
+            // if it is ajax validation request
+            if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+            {
+                    echo CActiveForm::validate($model);
+                    Yii::app()->end();
+            }
 
-		// collect user input data
-		if(isset($_POST['LoginForm']))
-		{
-			$model->attributes=$_POST['LoginForm'];
-			// validate user input and redirect to the previous page if valid
-			if($model->validate() && $model->login())
-				$this->redirect(Yii::app()->user->returnUrl);
-		}
-		// display the login form
-		$this->render('login',array('model'=>$model));
+            // collect user input data
+            if(isset($_POST['LoginForm']))
+            {
+                    $model->attributes=$_POST['LoginForm'];
+                    // validate user input and redirect to the previous page if valid
+                    if($model->validate() && $model->login()){
+                        
+                        /**
+                         * Configure remember me cookie
+                         */
+                        if ($model->rememberMe == 1) {
+                            unset(Yii::app()->request->cookies['remember_me']);
+                            $cookie = new CHttpCookie('remember_me', $model->username);
+                            $cookie->expire = time()+60*60*24*180; 
+                            Yii::app()->request->cookies['remember_me'] = $cookie;
+                        }
+                        else{
+                            if (isset(Yii::app()->request->cookies['remember_me'])) {
+                                unset(Yii::app()->request->cookies['remember_me']);
+                            }
+                        }
+                        
+                        $this->redirect(Yii::app()->user->returnUrl);
+                    }        
+            }
+            // display the login form
+            $this->render('login',array('model'=>$model));
 	}
 
 	/**

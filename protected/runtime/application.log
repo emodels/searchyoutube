@@ -1399,3 +1399,260 @@ in C:\xampplite\htdocs\searchyoutube\index.php (13)
 2013/09/05 19:51:32 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5).
 in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (81)
 in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 09:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 09:38:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "login".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('login')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/login
+---
+2013/09/06 10:01:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "searchyoutube/index.php".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('searchyoutube/i...')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/searchyoutube/index.php
+HTTP_REFERER=http://localhost/searchyoutube/site/login
+---
+2013/09/06 10:41:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gdm_login_photo.png".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('gdm_login_photo...')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/searchyoutube/gdm_login_photo.png
+HTTP_REFERER=http://localhost/searchyoutube/site/login
+---
+2013/09/06 13:57:18 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:26 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 13:57:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `entry` (`id`, `title`, `author`, `viewcount`, `link`, `embed_url`, `user`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6).
+in C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php (91)
+in C:\xampplite\htdocs\searchyoutube\index.php (13)
+2013/09/06 15:23:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(271): CController->missingAction('profile')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('profile')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/profile')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/searchyoutube/site/profile
+---
+2013/09/06 15:24:57 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampplite\htdocs\searchyoutube\protected\framework\db\ar\CActiveRecord.php(144): CComponent->__get('rememberMe')
+#1 C:\xampplite\htdocs\searchyoutube\protected\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('rememberMe')
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\helpers\CHtml.php(1347): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\widgets\CActiveForm.php(665): CHtml::activeCheckBox(Object(User), 'rememberMe', Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\views\site\profile.php(36): CActiveForm->checkBox(Object(User), 'rememberMe')
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(127): require('C:\xampplite\ht...')
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampplite\ht...', Array, true)
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(870): CBaseController->renderFile('C:\xampplite\ht...', Array, true)
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(783): CController->renderPartial('profile', Array, true)
+#9 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(167): CController->render('profile', Array)
+#10 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionProfile()
+#11 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#13 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('profile')
+#15 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/profile')
+#16 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/searchyoutube/site/profile
+---
+2013/09/06 15:42:09 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "getController".' in C:\xampplite\htdocs\searchyoutube\protected\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('getController', Array)
+#1 C:\xampplite\htdocs\searchyoutube\protected\controllers\SiteController.php(173): SiteController->getController()
+#2 C:\xampplite\htdocs\searchyoutube\protected\framework\web\actions\CInlineAction.php(50): SiteController->actionProfile()
+#3 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(276): CController->run('profile')
+#7 C:\xampplite\htdocs\searchyoutube\protected\framework\web\CWebApplication.php(135): CWebApplication->runController('site/profile')
+#8 C:\xampplite\htdocs\searchyoutube\protected\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\xampplite\htdocs\searchyoutube\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/searchyoutube/site/profile
+HTTP_REFERER=http://localhost/searchyoutube/site/profile
+---

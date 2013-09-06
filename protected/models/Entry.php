@@ -10,6 +10,10 @@
  * @property integer $viewcount
  * @property string $link
  * @property string $embed_url
+ * @property integer $user
+ *
+ * The followings are the available model relations:
+ * @property User $user0
  */
 class Entry extends CActiveRecord
 {
@@ -39,13 +43,13 @@ class Entry extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, title, author, viewcount, link, embed_url', 'required'),
-			array('id, viewcount', 'numerical', 'integerOnly'=>true),
+			array('title, author, viewcount, link, embed_url, user', 'required'),
+			array('viewcount, user', 'numerical', 'integerOnly'=>true),
 			array('title, link, embed_url', 'length', 'max'=>500),
 			array('author', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, author, viewcount, link, embed_url', 'safe', 'on'=>'search'),
+			array('id, title, author, viewcount, link, embed_url, user', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,6 +61,7 @@ class Entry extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'user0' => array(self::BELONGS_TO, 'User', 'user'),
 		);
 	}
 
@@ -72,6 +77,7 @@ class Entry extends CActiveRecord
 			'viewcount' => 'Viewcount',
 			'link' => 'Link',
 			'embed_url' => 'Embed Url',
+			'user' => 'User',
 		);
 	}
 
@@ -92,6 +98,7 @@ class Entry extends CActiveRecord
 		$criteria->compare('viewcount',$this->viewcount);
 		$criteria->compare('link',$this->link,true);
 		$criteria->compare('embed_url',$this->embed_url,true);
+		$criteria->compare('user',$this->user);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

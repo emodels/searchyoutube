@@ -20,7 +20,6 @@
 <body>
 
 <div class="container" id="page">
-
 	<div id="header">
             <div class="left" style="padding: 10px 0 10px 10px"><img src="<?php echo Yii::app()->baseUrl; ?>/images/youtube-logo.jpg" /></div><div id="logo" style="padding: 30px 0 0 150px"><?php echo CHtml::encode(Yii::app()->name); ?></div>
             <div class="clearfix"></div>
@@ -31,12 +30,28 @@
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
 				/*array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'Contact', 'url'=>array('/site/contact')),*/
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)*/
+				array('label'=>'Edit Profile', 'url'=>array('/site/profile'), 'visible'=>!Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
 	</div><!-- mainmenu -->
+        <?php
+            $flashMessages = Yii::app()->user->getFlashes();
+            if ($flashMessages) {
+                echo '<ul class="flashes" style="list-style-type:none; margin: 0px; padding: 0px">';
+                foreach($flashMessages as $key => $message) {
+                    echo '<li><div class="flash-' . $key . '">' . $message . "</div></li>\n";
+                }
+                echo '</ul>';
+                Yii::app()->clientScript->registerScript(
+                'myHideEffect',
+                '$(".flashes").animate({opacity: 1.0}, 3000).fadeOut("slow");',
+                CClientScript::POS_READY
+                );            
+            }
+        ?>
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
 			'links'=>$this->breadcrumbs,
