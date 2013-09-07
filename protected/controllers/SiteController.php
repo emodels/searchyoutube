@@ -65,7 +65,7 @@ class SiteController extends Controller
                         
                         $count = 1;
                         for ($index = 0; $index < 500; $index+=51) {
-                            $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=' . ($index == 0 ? '1' : $index) . '&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount<' . $model->viewcount . ']';
+                            $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=' . ($index == 0 ? '1' : $index) . '&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->viewcount . ']';
                             try
                             {
                                 $obj_result = file_get_contents($str_URL);
