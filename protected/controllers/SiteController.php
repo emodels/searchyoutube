@@ -120,10 +120,11 @@ class SiteController extends Controller
                             ));
                             $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50, 'params' => array('min' => $_GET['min'], 'max' => $_GET['max']))));
                         }
-                        if (isset($_GET['ajax']) && $_GET['ajax'] == "grid_videos" && $_POST['cid']) {
+                        if (isset($_GET['ajax']) && $_GET['ajax'] == "grid_videos" && isset($_POST['cid'])) {
                             $entry_ids = implode(', ', $_POST['cid']);
                             Entry::model()->deleteAll('id IN (' . $entry_ids . ')');
                         }
+                        Yii::app()->end();
                     } else {
                         Entry::model()->deleteAll('user = :user', array(':user' => Yii::app()->user->id));
                     }
