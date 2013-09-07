@@ -1,5 +1,32 @@
 <?php $this->pageTitle=Yii::app()->name; ?>
 <script type="text/javascript">
+    function ExportVideos(){
+        window.location.assign('<?php echo Yii::app()->homeUrl; ?>/site/export');
+        $('#statusMsg').html('<ul class="flashes" style="list-style-type:none; margin: 0px; padding: 0px"><li><div class="flash-success">Videos listing exported successfully</div></li>\n');
+        $('.flashes').animate({opacity: 1.0}, 3000).fadeOut("slow");
+    }
+    function DeleteVideos(){
+        var atLeastOneIsChecked = $('input[name=\"cid[]\"]:checked').length > 0;
+
+        if (!atLeastOneIsChecked)
+        {
+           alert('Please select at least one Video to delete');
+        }
+        else if (window.confirm('Are you sure you want to delete selected Videos ?'))
+        {
+            $.fn.yiiGridView.update('grid_videos', {
+                    type:'POST',
+                    url:$(this).attr('href'),
+                    data: $('#grid-form').serialize(),
+                    success:function(data) {
+                        $.fn.yiiGridView.update('grid_videos');
+                        $('#statusMsg').html('<ul class="flashes" style="list-style-type:none; margin: 0px; padding: 0px"><li><div class="flash-notice">Selected Videos Deleted</div></li>\n');
+                        $('.flashes').animate({opacity: 1.0}, 3000).fadeOut("slow");
+                    }
+            });
+        }
+    }
+    
     function PreviewVideo(strURL){
         $("#dialogVideo").dialog({
             autoOpen: true,
@@ -76,14 +103,36 @@
         </div>
         <?php $this->endWidget(); ?>
     </div>
+    <?php
+    $form = $this->beginWidget('CActiveForm', array(
+        'id' => 'grid-form',
+        'htmlOptions' => array('autocomplete' => 'off'),
+        'enableClientValidation' => true,
+        'clientOptions' => array(
+            'validateOnSubmit' => true,
+            'validateOnChange' => true
+        ),
+    ));
+    ?>  
+    <?php if ($dataProvider->getTotalItemCount() > 0){ ?>
+    <input id="btnDelete" type="button" class="button" value="Delete Selected Videos" onclick="javascript:DeleteVideos();" />
+    <input id="btnExport" type="button" class="button" style="margin-left: 15px" value="Export Video Listing" onclick="javascript:ExportVideos();" />
+    <?php } ?>
     <div style="padding-top: 20px">
         <?php
         $this->widget('zii.widgets.grid.CGridView', array(
+            'id' => 'grid_videos',
             'dataProvider' => $dataProvider,
             'ajaxUpdate' => true,
             'enablePagination' => true,
             'template'=>"{summary}{pager}<br>{items}{pager}",
             'columns' => array(
+                array(
+                    'name'=>'',             
+                    'value'=>'CHtml::checkBox("cid[]",null,array("value"=>$data->id,"id"=>"cid_".$data->id))',
+                    'type'=>'raw',
+                    'htmlOptions'=>array('width'=>5),
+                ),                
                 array(
                     'name'=>'Title',
                     'value'=>'$data->title'
@@ -109,6 +158,7 @@
             )));
         ?>
     </div>
+    <?php $this->endWidget(); ?>
     <?php
     $this->beginWidget('zii.widgets.jui.CJuiDialog', array(
         'id'=>'dialogVideo',

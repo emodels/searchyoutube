@@ -37,6 +37,7 @@
 			),
 		)); ?>
 	</div><!-- mainmenu -->
+        <div id="statusMsg"></div>
         <?php
             $flashMessages = Yii::app()->user->getFlashes();
             if ($flashMessages) {

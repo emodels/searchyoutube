@@ -65,7 +65,7 @@ class SiteController extends Controller
                         
                         $count = 1;
                         for ($index = 0; $index < 500; $index+=51) {
-                            $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=' . ($index == 0 ? '1' : $index) . '&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount>' . $model->viewcount . ']';
+                            $str_URL = 'https://gdata.youtube.com/feeds/api/videos?q=' . $str_subject . '&orderby=viewCount&start-index=' . ($index == 0 ? '1' : $index) . '&max-results=50&hl=' . $model->language . '&lr=' . $model->language . '&v=2&fields=entry[yt:statistics/@viewCount<' . $model->viewcount . ']';
                             try
                             {
                                 $obj_result = file_get_contents($str_URL);
@@ -120,6 +120,10 @@ class SiteController extends Controller
                             ));
                             $dataProvider = new CActiveDataProvider('Entry', array('criteria'=>$criteria, 'pagination' => array('pageSize' => 50, 'params' => array('min' => $_GET['min'], 'max' => $_GET['max']))));
                         }
+                        if (isset($_GET['ajax']) && $_GET['ajax'] == "grid_videos" && $_POST['cid']) {
+                            $entry_ids = implode(', ', $_POST['cid']);
+                            Entry::model()->deleteAll('id IN (' . $entry_ids . ')');
+                        }
                     } else {
                         Entry::model()->deleteAll('user = :user', array(':user' => Yii::app()->user->id));
                     }
@@ -128,6 +132,34 @@ class SiteController extends Controller
  		$this->render('index', array('model' => $model, 'dataProvider' => $dataProvider, 'advance_search' => $advance_search));
 	}
 
+        public function actionExport(){
+            $model = Entry::model()->findAll('user = :user', array(':user' => Yii::app()->user->id));
+            
+            $contents = '<table>
+            <tr>
+                <td>Title</td>
+                <td>Author</td>
+                <td>View Count</td>
+                <td>link</td>
+            </tr>';
+            foreach ($model as $entry) {
+                $contents = $contents . 
+                '<tr>
+                    <td>' . $entry->title . '</td>
+                    <td>' . $entry->author . '</td>
+                    <td>' . $entry->viewcount . '</td>
+                    <td>' . $entry->link . '</td>
+                </tr>';
+            }
+            $contents = $contents . '</table>';        
+            
+            $filename = 'video_listing.xls';
+            header( 'Content-type: application/ms-excel' );
+            header( 'Content-Disposition: attachment; filename=' . $filename );
+
+            echo $contents;            
+        }
+        
 	/**
 	 * This is the action to handle external exceptions.
 	 */
