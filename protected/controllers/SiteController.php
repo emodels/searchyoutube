@@ -124,7 +124,6 @@ class SiteController extends Controller
                             $entry_ids = implode(', ', $_POST['cid']);
                             Entry::model()->deleteAll('id IN (' . $entry_ids . ')');
                         }
-                        Yii::app()->end();
                     } else {
                         Entry::model()->deleteAll('user = :user', array(':user' => Yii::app()->user->id));
                     }
