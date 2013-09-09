@@ -76,7 +76,7 @@ class SiteController extends Controller
                                     $entry = new Entry();
 
                                     $entry->title = (string)$value->title;
-                                    $entry->author = (string)$value->author->name;
+                                    $entry->author = str_replace("https://gdata.youtube.com/feeds/api/users/","", (string)$value->author->uri);
 
                                     $yt = $value->children('http://gdata.youtube.com/schemas/2007');
                                     $attrs = $yt->statistics->attributes();

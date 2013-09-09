@@ -1,5 +1,14 @@
 <?php $this->pageTitle=Yii::app()->name; ?>
 <script type="text/javascript">
+    function SendVideoMessage(){
+        if ($('#txtAuthor').val() == ''){
+            alert('Please enter YouTube Author name');
+            $('#txtAuthor').focus();
+        }
+        else {
+            window.document.location.href = "<?php echo Yii::app()->homeUrl; ?>/email?recepent=" + $('#txtAuthor').val(); 
+        }
+    }
     function ExportVideos(){
         window.location.assign('<?php echo Yii::app()->homeUrl; ?>/site/export');
         $('#statusMsg').html('<ul class="flashes" style="list-style-type:none; margin: 0px; padding: 0px"><li><div class="flash-success">Videos listing exported successfully</div></li>\n');
@@ -116,8 +125,9 @@
     ?>  
     <?php if ($dataProvider->getTotalItemCount() > 0){ ?>
     <input id="btnDelete" type="button" class="button" value="Delete Selected Videos" onclick="javascript:DeleteVideos();" />
-    <input id="btnExport" type="button" class="button" style="margin-left: 15px" value="Export Video Listing" onclick="javascript:ExportVideos();" />
-    <?php } ?>
+    <input id="btnExport" type="button" class="button" style="margin-left: 15px; margin-right: 15px" value="Export Video Listing" onclick="javascript:ExportVideos();" />
+    YouTube Author Name : <input id="txtAuthor" type="text" class="text_box"/>
+    <input id="btnExport" type="button" class="button" style="margin-left: 15px" value="Send Video Message" onclick="javascript:SendVideoMessage();" />    <?php } ?>
     <div style="padding-top: 20px">
         <?php
         $this->widget('zii.widgets.grid.CGridView', array(
@@ -139,7 +149,8 @@
                 ),
                 array(
                     'name'=>'Author',
-                    'value'=>'$data->author'
+                    'type'=>'raw',
+                    'value'=>'CHtml::link($data->author, "http://www.youtube.com/user/$data->author", array("target" => "_blank"))'
                 ),
                 array(
                     'name'=>'View Count',

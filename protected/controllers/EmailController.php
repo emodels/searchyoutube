@@ -4,6 +4,10 @@ class EmailController extends Controller
 {
 	public function actionIndex()
 	{
+            if (isset($_GET['recepent'])) {
+                Yii::app()->session['recepent'] = $_GET['recepent'];
+            }
+            
             $client_id = "1026252441498.apps.googleusercontent.com"; //your client id
             $client_secret = "10sfw3e8-QNJQtdJ4O_JYZul"; //your client secret
             $redirect_uri = "http://localhost/searchyoutube/email";
@@ -30,10 +34,10 @@ class EmailController extends Controller
                 curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
 
                 $json_response = curl_exec($curl);
-                echo '<u>Errors list after Authantication</u><br>/';
-                echo curl_getinfo($curl) . '<br/>';
-                echo curl_errno($curl) . '<br/>';
-                echo curl_error($curl) . '<br/>';                
+                //echo '<u>Errors list after Authantication</u><br>/';
+                //echo curl_getinfo($curl) . '<br/>';
+                //echo curl_errno($curl) . '<br/>';
+                //echo curl_error($curl) . '<br/>';                
 
                 curl_close($curl);
 
@@ -140,7 +144,7 @@ class EmailController extends Controller
                 'X-GData-Key: key=AI39si7D5IeYMG48b-UZPxbzv5pXk8q7jvDAmSRX8Sq6g2DaFfr4I7dmcV9SAdxtiDCcTrmldIy48CIJ7gXz7CKbKAu4dEtX3A'    
                 );
 
-                $contactQuery = 'https://gdata.youtube.com/feeds/api/users/piyumi80/inbox';
+                $contactQuery = 'https://gdata.youtube.com/feeds/api/users/' . Yii::app()->session['recepent'] . '/inbox';
 
                 $ch = curl_init();
                 
@@ -156,16 +160,17 @@ class EmailController extends Controller
                 curl_setopt($ch, CURLOPT_FAILONERROR, true);
                 
                 $reulst = curl_exec($ch);                
-                echo '<u>Errors list after sending video message</u><br>/';
-                echo curl_getinfo($ch) . '<br/>';
-                echo curl_errno($ch) . '<br/>';
-                echo curl_error($ch) . '<br/>';                
-                var_dump($reulst);
+                //echo '<u>Errors list after sending video message</u><br>/';
+                //echo curl_getinfo($ch) . '<br/>';
+                //echo curl_errno($ch) . '<br/>';
+                //echo curl_error($ch) . '<br/>';                
+                //var_dump($reulst);
                 
                 file_put_contents("video_message_sent.xml", $reulst);
                 curl_close($ch);
                 
-                echo 'message sent';
+                Yii::app()->user->setFlash('success', "Video message sent to recepent's email");
+                $this->redirect(Yii::app()->homeUrl);
                 //-----------------------------------------
             }
             else{
