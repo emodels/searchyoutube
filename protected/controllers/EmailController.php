@@ -132,8 +132,8 @@ class EmailController extends Controller
                 $contactXML = '<?xml version="1.0" encoding="UTF-8"?>
                 <entry xmlns="http://www.w3.org/2005/Atom"
                     xmlns:yt="http://gdata.youtube.com/schemas/2007">
-                <id>9jL52aCQLQE</id>
-                <summary>Hi Rob, I am danesh here. Finally managed to send Video message using YouTube API</summary>
+                <id>utwP4W9RpDE</id>
+                <summary>Hi Rob, Please put a link on my site at http://ymbrealty.com</summary>
                 </entry>';
 
                 $headers = array(
