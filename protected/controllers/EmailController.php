@@ -10,7 +10,7 @@ class EmailController extends Controller
             
             $client_id = "1026252441498.apps.googleusercontent.com"; //your client id
             $client_secret = "10sfw3e8-QNJQtdJ4O_JYZul"; //your client secret
-            $redirect_uri = "http://" . $_SERVER['SERVER_NAME'] . "/searchyoutube/email";
+            $redirect_uri = "http://" . $_SERVER['SERVER_NAME'] . "/email";
             $scope = "https://www.google.com/m8/feeds/ https://gdata.youtube.com"; //google scope to access
             $state = "profile"; //optional
             $access_type = "offline"; //optional - allows for retrieval of refresh_token for offline access

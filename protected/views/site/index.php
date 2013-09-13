@@ -6,7 +6,7 @@
             $('#txtAuthor').focus();
         }
         else {
-            window.document.location.href = "<?php echo Yii::app()->homeUrl; ?>/email?recepent=" + $('#txtAuthor').val(); 
+            window.document.location.href = "<?php echo Yii::app()->baseUrl; ?>/email?recepent=" + $('#txtAuthor').val(); 
         }
     }
     function ExportVideos(){
