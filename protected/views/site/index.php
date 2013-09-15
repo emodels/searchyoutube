@@ -10,7 +10,7 @@
         }
     }
     function ExportVideos(){
-        window.location.assign('<?php echo Yii::app()->homeUrl; ?>/site/export');
+        window.location.assign('<?php echo Yii::app()->baseUrl; ?>/site/export');
         $('#statusMsg').html('<ul class="flashes" style="list-style-type:none; margin: 0px; padding: 0px"><li><div class="flash-success">Videos listing exported successfully</div></li>\n');
         $('.flashes').animate({opacity: 1.0}, 3000).fadeOut("slow");
     }
