@@ -212,6 +212,29 @@ class SiteController extends Controller
 		$this->render('profile',array('model'=>$model));
         }
         
+        public function actionSettings(){
+                $model = Settings::model()->find('user = :id', array(':id' => Yii::app()->user->id));
+                
+                if (!isset($model)){
+                    $model = new Settings();
+                }
+                
+                if (isset($_POST['Settings'])) {
+                    $model->attributes = $_POST['Settings'];
+                    $model->user = Yii::app()->user->id;
+                    
+                    if ($model->save()){
+                        Yii::app()->user->setFlash('success', "Settings Updated");
+                        $this->redirect(Yii::app()->homeUrl);
+                    }
+                    else{
+                        Yii::app()->user->setFlash('notice', $model->getErrors());
+                    }
+                }
+                
+		$this->render('settings',array('model'=>$model));
+        }
+        
 	/**
 	 * Displays the login page
 	 */

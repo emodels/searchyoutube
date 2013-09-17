@@ -4,13 +4,9 @@ class EmailController extends Controller
 {
 	public function actionIndex()
 	{
-            if (isset($_GET['recepent'])) {
-                Yii::app()->session['recepent'] = $_GET['recepent'];
-            }
-            
             $client_id = "1026252441498.apps.googleusercontent.com"; //your client id
             $client_secret = "10sfw3e8-QNJQtdJ4O_JYZul"; //your client secret
-            $redirect_uri = "http://" . $_SERVER['SERVER_NAME'] . "/email";
+            $redirect_uri = "http://" . ($_SERVER['SERVER_NAME'] == 'localhost' ? 'localhost/searchyoutube' : $_SERVER['SERVER_NAME']) . "/email";
             $scope = "https://www.google.com/m8/feeds/ https://gdata.youtube.com"; //google scope to access
             $state = "profile"; //optional
             $access_type = "offline"; //optional - allows for retrieval of refresh_token for offline access
@@ -129,11 +125,16 @@ class EmailController extends Controller
                 echo 'added';*/
                 
                 //------------Send Video message-----------
+                $settings = Settings::model()->find('user = :id', array(':id' => Yii::app()->user->id));
+                $entries = Entry::model()->findAll('user = :user', array(':user' => Yii::app()->user->id));
+                
+                $str_Video_id = substr($settings->video, strpos($settings->video, '=') + 1, strlen($settings->video));
+                
                 $contactXML = '<?xml version="1.0" encoding="UTF-8"?>
                 <entry xmlns="http://www.w3.org/2005/Atom"
                     xmlns:yt="http://gdata.youtube.com/schemas/2007">
-                <id>utwP4W9RpDE</id>
-                <summary>Hi Rob, Please put a link on my site at http://ymbrealty.com</summary>
+                <id>' . $str_Video_id . '</id>
+                <summary>' . $settings->message . '</summary>
                 </entry>';
 
                 $headers = array(
@@ -144,32 +145,34 @@ class EmailController extends Controller
                 'X-GData-Key: key=AI39si7D5IeYMG48b-UZPxbzv5pXk8q7jvDAmSRX8Sq6g2DaFfr4I7dmcV9SAdxtiDCcTrmldIy48CIJ7gXz7CKbKAu4dEtX3A'    
                 );
 
-                $contactQuery = 'https://gdata.youtube.com/feeds/api/users/' . Yii::app()->session['recepent'] . '/inbox';
-
                 $ch = curl_init();
+
+                foreach ($entries as $entry) {
+                    $contactQuery = 'https://gdata.youtube.com/feeds/api/users/' . $entry->author . '/inbox';
+
+                    curl_setopt($ch, CURLOPT_URL, $contactQuery );
+                    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
+                    curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
+                    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+                    curl_setopt($ch, CURLOPT_POSTFIELDS, $contactXML);
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+                    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+                    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
+                    curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+                    curl_setopt($ch, CURLOPT_FAILONERROR, true);
+
+                    $reulst = curl_exec($ch);                
+                    //echo '<u>Errors list after sending video message</u><br>/';
+                    //echo curl_getinfo($ch) . '<br/>';
+                    //echo curl_errno($ch) . '<br/>';
+                    //echo curl_error($ch) . '<br/>';                
+                    //var_dump($reulst);
+                }
                 
-                curl_setopt($ch, CURLOPT_URL, $contactQuery );
-                curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "POST");
-                curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_POSTFIELDS, $contactXML);
-                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
-                curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-                curl_setopt($ch, CURLOPT_FAILONERROR, true);
-                
-                $reulst = curl_exec($ch);                
-                //echo '<u>Errors list after sending video message</u><br>/';
-                //echo curl_getinfo($ch) . '<br/>';
-                //echo curl_errno($ch) . '<br/>';
-                //echo curl_error($ch) . '<br/>';                
-                //var_dump($reulst);
-                
-                file_put_contents("video_message_sent.xml", $reulst);
+                //file_put_contents("video_message_sent.xml", $reulst);
                 curl_close($ch);
                 
-                Yii::app()->user->setFlash('success', "Video message sent to recepent's email");
+                Yii::app()->user->setFlash('success', "Video messages sent to Authors");
                 $this->redirect(Yii::app()->homeUrl);
                 //-----------------------------------------
             }

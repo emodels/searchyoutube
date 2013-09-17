@@ -16,6 +16,7 @@
  *
  * The followings are the available model relations:
  * @property Entry[] $entries
+ * @property Settings[] $settings
  */
 class User extends CActiveRecord
 {
@@ -65,6 +66,7 @@ class User extends CActiveRecord
 		// class name for the relations automatically generated below.
 		return array(
 			'entries' => array(self::HAS_MANY, 'Entry', 'user'),
+                        'settings' => array(self::HAS_MANY, 'Settings', 'user'),
 		);
 	}
 

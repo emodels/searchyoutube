@@ -1,12 +1,10 @@
 <?php $this->pageTitle=Yii::app()->name; ?>
 <script type="text/javascript">
     function SendVideoMessage(){
-        if ($('#txtAuthor').val() == ''){
-            alert('Please enter YouTube Author name');
-            $('#txtAuthor').focus();
-        }
-        else {
-            window.document.location.href = "<?php echo Yii::app()->baseUrl; ?>/email?recepent=" + $('#txtAuthor').val(); 
+        if (confirm('Are you sure you wanted to send Video Message to Authors ?')){
+            $('#divProgress').html('Message sending in progress....');
+            $("#dialogProgress").dialog("open").siblings(".ui-dialog-titlebar").remove();
+            window.document.location.href = "<?php echo Yii::app()->baseUrl; ?>/email"; 
         }
     }
     function ExportVideos(){
@@ -126,8 +124,7 @@
     <?php if ($dataProvider->getTotalItemCount() > 0){ ?>
     <input id="btnDelete" type="button" class="button" value="Delete Selected Videos" onclick="javascript:DeleteVideos();" />
     <input id="btnExport" type="button" class="button" style="margin-left: 15px; margin-right: 15px" value="Export Video Listing" onclick="javascript:ExportVideos();" />
-    YouTube Author Name : <input id="txtAuthor" type="text" class="text_box"/>
-    <input id="btnExport" type="button" class="button" style="margin-left: 15px" value="Send Video Message" onclick="javascript:SendVideoMessage();" />    <?php } ?>
+    <input id="btnEmail" type="button" class="button" style="margin-left: 15px" value="Send Video Message" onclick="javascript:SendVideoMessage();" />    <?php } ?>
     <div style="padding-top: 20px">
         <?php
         $this->widget('zii.widgets.grid.CGridView', array(
@@ -201,7 +198,7 @@
     ));?>
     <div class="row" style="padding-top: 5px">
         <div class="column"><img src="images/ajax-loader.gif" /></div>
-        <div class="column" style="font-size: 18px; padding-top: 14px">Search in progress, please wait....</div>
+        <div class="column" style="font-size: 18px; padding-top: 14px" id="divProgress">Search in progress, please wait....</div>
         <div class="clearfix"></div>
     </div>    
     <?php $this->endWidget();?>
