@@ -123,6 +123,8 @@ class SiteController extends Controller
                         if (isset($_GET['ajax']) && $_GET['ajax'] == "grid_videos" && isset($_POST['cid'])) {
                             $entry_ids = implode(', ', $_POST['cid']);
                             Entry::model()->deleteAll('id IN (' . $entry_ids . ')');
+                            echo Entry::model()->count('user = :user', array(':user' => Yii::app()->user->id));
+                            Yii::app()->end();
                         }
                     } else {
                         Entry::model()->deleteAll('user = :user', array(':user' => Yii::app()->user->id));

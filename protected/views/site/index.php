@@ -1,6 +1,11 @@
 <?php $this->pageTitle=Yii::app()->name; ?>
 <script type="text/javascript">
+    var int_record_count = <?php echo $dataProvider->getTotalItemCount(); ?>;
     function SendVideoMessage(){
+        if (int_record_count > 25){
+            alert('Warning : Shortlisted Video count must be less than 25');
+            return;
+        }
         if (confirm('Are you sure you wanted to send Video Message to Authors ?')){
             $('#divProgress').html('Message sending in progress....');
             $("#dialogProgress").dialog("open").siblings(".ui-dialog-titlebar").remove();
@@ -26,6 +31,7 @@
                     url:$(this).attr('href'),
                     data: $('#grid-form').serialize(),
                     success:function(data) {
+                        int_record_count = data; 
                         $.fn.yiiGridView.update('grid_videos');
                         $('#statusMsg').html('<ul class="flashes" style="list-style-type:none; margin: 0px; padding: 0px"><li><div class="flash-notice">Selected Videos Deleted</div></li>\n');
                         $('.flashes').animate({opacity: 1.0}, 3000).fadeOut("slow");
